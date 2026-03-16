@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungan Investor - Astria Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-dropdown { opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; }
+        .group:hover .nav-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .scroll-reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-[#1e3a5f] text-white py-2 text-sm border-b border-white/10">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-globe text-xs"></i>
+                    <select class="bg-transparent border-none outline-none cursor-pointer text-xs font-medium">
+                        <option value="id" class="text-gray-800">ID</option>
+                        <option value="en" class="text-gray-800">EN</option>
+                    </select>
+                </span>
+                <span class="hidden md:inline text-xs text-gray-300">|</span>
+                <span class="hidden md:inline text-xs"><i class="fas fa-phone mr-2"></i>021-1234-5678</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-blue-300 transition text-xs"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-blue-300 transition text-xs"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-300 transition text-xs"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-[#1e3a5f] to-[#3182ce] rounded-lg flex items-center justify-center shadow-lg">
+                        <span class="text-white font-bold text-2xl">A</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-[#1e3a5f] tracking-tight">ASTRIA</h1>
+                        <p class="text-[10px] text-gray-500 tracking-[0.2em] -mt-1">GROUP</p>
+                    </div>
+                </a>
+
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="about.html" class="flex items-center gap-1 text-gray-700 hover:text-[#1e3a5f] font-medium py-8 text-sm">Tentang Kami <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="nav-dropdown absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg py-3 border-t-2 border-[#1e3a5f]">
+                            <a href="about.html" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Profil Perusahaan</a>
+                            <a href="about.html#history" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Sejarah</a>
+                            <a href="about.html#vision" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Visi & Misi</a>
+                            <a href="about.html#management" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Manajemen</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="business.html" class="flex items-center gap-1 text-gray-700 hover:text-[#1e3a5f] font-medium py-8 text-sm">Bisnis Kami <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="nav-dropdown absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg py-3 border-t-2 border-[#1e3a5f]">
+                            <a href="business.html#digital" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Exmind Digital</a>
+                            <a href="business.html#creative" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">FDX Management</a>
+                            <a href="business.html#media" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Neulink News</a>
+                            <a href="business.html#consulting" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">D'Multi Pro</a>
+                            <a href="business.html#hrd" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Realm Man</a>
+                            <a href="business.html#distribution" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Oravita Group</a>
+                            <a href="business.html#event" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Kounan Group</a>
+                        </div>
+                    </div>
+                    <a href="sustainability.html" class="text-gray-700 hover:text-[#1e3a5f] font-medium text-sm py-8">Keberlanjutan</a>
+                    <a href="investor.html" class="text-[#1e3a5f] font-medium text-sm py-8 border-b-2 border-[#1e3a5f]">Investor</a>
+                    <a href="news.html" class="text-gray-700 hover:text-[#1e3a5f] font-medium text-sm py-8">Berita</a>
+                    <a href="career.html" class="text-gray-700 hover:text-[#1e3a5f] font-medium text-sm py-8">Karir</a>
+                </div>
+                <button class="lg:hidden text-gray-600" onclick="toggleMobileMenu()"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+            <div class="container mx-auto px-6 py-4 space-y-3">
+                <a href="about.html" class="block py-2 text-gray-700">Tentang Kami</a>
+                <a href="business.html" class="block py-2 text-gray-700">Bisnis Kami</a>
+                <a href="sustainability.html" class="block py-2 text-gray-700">Keberlanjutan</a>
+                <a href="investor.html" class="block py-2 text-[#1e3a5f] font-semibold">Investor</a>
+                <a href="news.html" class="block py-2 text-gray-700">Berita</a>
+                <a href="career.html" class="block py-2 text-gray-700">Karir</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-[#1e3a5f] text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl">
+                <div class="text-sm text-amber-300 mb-2 uppercase tracking-wider"><i class="fas fa-chart-line mr-2"></i> Investor Relations</div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hubungan Investor</h1>
+                <p class="text-xl text-blue-100">Informasi keuangan, laporan tahunan, dan data perusahaan untuk para investor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Status -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] rounded-3xl p-8 md:p-12 text-white shadow-2xl scroll-reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-4">Status Perusahaan</h2>
+                            <p class="text-blue-100 mb-6">Astria Group saat ini berstatus sebagai <strong>Private Holding Company</strong> yang terus berkembang dengan struktur kepemilikan yang solid.</p>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-building"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold">PT Astria Sukses Internasional</div>
+                                        <div class="text-sm text-blue-200">Private Company</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-calendar"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold">Didirikan 2020</div>
+                                        <div class="text-sm text-blue-200">Transformasi 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                                <div class="text-4xl font-bold mb-2">7</div>
+                                <div class="text-sm text-blue-200">Unit Bisnis</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                                <div class="text-4xl font-bold mb-2">100%</div>
+                                <div class="text-sm text-blue-200">Lokal</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                                <div class="text-4xl font-bold mb-2">∞</div>
+                                <div class="text-sm text-blue-200">Growth Potential</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                                <div class="text-4xl font-bold mb-2">A+</div>
+                                <div class="text-sm text-blue-200">Credit Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Highlights -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Highlight Keuangan</h2>
+                <p class="text-gray-600">Performa keuangan konsolidasi Astria Group.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-2xl p-8 shadow-lg scroll-reveal">
+                    <div class="text-sm text-gray-500 mb-2">Total Aset</div>
+                    <div class="text-3xl font-bold text-[#1e3a5f] mb-2">Rp 500 Miliar</div>
+                    <div class="text-sm text-green-600"><i class="fas fa-arrow-up mr-1"></i> +25% YoY</div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="text-sm text-gray-500 mb-2">Pendapatan</div>
+                    <div class="text-3xl font-bold text-[#1e3a5f] mb-2">Rp 350 Miliar</div>
+                    <div class="text-sm text-green-600"><i class="fas fa-arrow-up mr-1"></i> +30% YoY</div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="text-sm text-gray-500 mb-2">Laba Bersih</div>
+                    <div class="text-3xl font-bold text-[#1e3a5f] mb-2">Rp 75 Miliar</div>
+                    <div class="text-sm text-green-600"><i class="fas fa-arrow-up mr-1"></i> +20% YoY</div>
+                </div>
+            </div>
+
+            <!-- Chart Placeholder -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg scroll-reveal">
+                <h3 class="text-xl font-bold text-gray-900 mb-6">Tren Pendapatan 5 Tahun</h3>
+                <div class="h-64 bg-gray-100 rounded-xl flex items-end justify-around p-6 gap-4">
+                    <div class="w-16 bg-[#1e3a5f] rounded-t-lg relative group" style="height: 30%">
+                        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">2021</div>
+                        <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm font-semibold">2021</div>
+                    </div>
+                    <div class="w-16 bg-[#1e3a5f] rounded-t-lg relative group" style="height: 45%">
+                        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">2022</div>
+                        <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm font-semibold">2022</div>
+                    </div>
+                    <div class="w-16 bg-[#1e3a5f] rounded-t-lg relative group" style="height: 60%">
+                        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">2023</div>
+                        <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm font-semibold">2023</div>
+                    </div>
+                    <div class="w-16 bg-[#1e3a5f] rounded-t-lg relative group" style="height: 80%">
+                        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">2024</div>
+                        <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm font-semibold">2024</div>
+                    </div>
+                    <div class="w-16 bg-[#3182ce] rounded-t-lg relative group" style="height: 100%">
+                        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">2025</div>
+                        <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm font-semibold">2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Laporan & Publikasi</h2>
+                <p class="text-gray-600">Akses laporan tahunan, laporan keberlanjutan, dan presentasi investor.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="#" class="group bg-gray-50 rounded-2xl p-6 hover:bg-[#1e3a5f] hover:text-white transition scroll-reveal">
+                    <div class="w-14 h-14 bg-[#1e3a5f] group-hover:bg-white rounded-xl flex items-center justify-center text-white group-hover:text-[#1e3a5f] mb-4 transition">
+                        <i class="fas fa-file-pdf text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Laporan Tahunan 2025</h3>
+                    <p class="text-sm text-gray-500 group-hover:text-blue-200">PDF, 15 MB</p>
+                </a>
+
+                <a href="#" class="group bg-gray-50 rounded-2xl p-6 hover:bg-[#1e3a5f] hover:text-white transition scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 bg-green-600 group-hover:bg-white rounded-xl flex items-center justify-center text-white group-hover:text-green-600 mb-4 transition">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Laporan Keberlanjutan</h3>
+                    <p class="text-sm text-gray-500 group-hover:text-blue-200">PDF, 12 MB</p>
+                </a>
+
+                <a href="#" class="group bg-gray-50 rounded-2xl p-6 hover:bg-[#1e3a5f] hover:text-white transition scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 bg-amber-600 group-hover:bg-white rounded-xl flex items-center justify-center text-white group-hover:text-amber-600 mb-4 transition">
+                        <i class="fas fa-chart-pie text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Presentasi Investor</h3>
+                    <p class="text-sm text-gray-500 group-hover:text-blue-200">PDF, 8 MB</p>
+                </a>
+
+                <a href="#" class="group bg-gray-50 rounded-2xl p-6 hover:bg-[#1e3a5f] hover:text-white transition scroll-reveal" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 bg-purple-600 group-hover:bg-white rounded-xl flex items-center justify-center text-white group-hover:text-purple-600 mb-4 transition">
+                        <i class="fas fa-calendar-alt text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">RUPS 2026</h3>
+                    <p class="text-sm text-gray-500 group-hover:text-blue-200">PDF, 5 MB</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Investor Relations -->
+    <section class="py-20 bg-[#1e3a5f] text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4 scroll-reveal">Hubungi Investor Relations</h2>
+            <p class="text-blue-100 mb-8 max-w-2xl mx-auto scroll-reveal">Untuk informasi lebih lanjut mengenai investasi dan kemitraan dengan Astria Group.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center scroll-reveal">
+                <a href="mailto:investor@astria-group.com" class="px-8 py-4 bg-white text-[#1e3a5f] font-semibold rounded-lg hover:bg-gray-100 transition">
+                    <i class="fas fa-envelope mr-2"></i> investor@astria-group.com
+                </a>
+                <a href="tel:+622112345678" class="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#1e3a5f] transition">
+                    <i class="fas fa-phone mr-2"></i> +62 21 1234 5678
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                            <span class="text-[#1e3a5f] font-bold text-xl">A</span>
+                        </div>
+                        <div>
+                            <span class="text-xl font-bold">ASTRIA</span>
+                            <span class="text-xs text-gray-400 block -mt-1">GROUP</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md text-sm leading-relaxed">
+                        PT Astria Sukses Internasional adalah holding company yang membangun ekosistem bisnis terintegrasi melalui tujuh unit bisnis yang adaptif dan inovatif.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#3182ce] transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#3182ce] transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#3182ce] transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="business.html" class="hover:text-white transition">Bisnis Kami</a></li>
+                        <li><a href="sustainability.html" class="hover:text-white transition">Keberlanjutan</a></li>
+                        <li><a href="investor.html" class="hover:text-white transition">Investor</a></li>
+                        <li><a href="news.html" class="hover:text-white transition">Berita</a></li>
+                        <li><a href="career.html" class="hover:text-white transition">Karir</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm uppercase tracking-wider">Kontak</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-[#3182ce]"></i>
+                            <span>Menara Astria, Jakarta Selatan<br>Indonesia</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-[#3182ce]"></i>
+                            <span>+62 21 1234 5678</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-[#3182ce]"></i>
+                            <span>corporate@astria-group.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+                <div>© 2026 PT Astria Sukses Internasional. All rights reserved.</div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-white transition">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
