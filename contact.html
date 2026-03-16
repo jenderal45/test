@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Astria Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-dropdown { opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; }
+        .group:hover .nav-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .scroll-reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-[#1e3a5f] text-white py-2 text-sm border-b border-white/10">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-globe text-xs"></i>
+                    <select class="bg-transparent border-none outline-none cursor-pointer text-xs font-medium">
+                        <option value="id" class="text-gray-800">ID</option>
+                        <option value="en" class="text-gray-800">EN</option>
+                    </select>
+                </span>
+                <span class="hidden md:inline text-xs text-gray-300">|</span>
+                <span class="hidden md:inline text-xs"><i class="fas fa-phone mr-2"></i>021-1234-5678</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-blue-300 transition text-xs"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-blue-300 transition text-xs"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-300 transition text-xs"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-[#1e3a5f] to-[#3182ce] rounded-lg flex items-center justify-center shadow-lg">
+                        <span class="text-white font-bold text-2xl">A</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-[#1e3a5f] tracking-tight">ASTRIA</h1>
+                        <p class="text-[10px] text-gray-500 tracking-[0.2em] -mt-1">GROUP</p>
+                    </div>
+                </a>
+
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="about.html" class="flex items-center gap-1 text-gray-700 hover:text-[#1e3a5f] font-medium py-8 text-sm">Tentang Kami <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="nav-dropdown absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg py-3 border-t-2 border-[#1e3a5f]">
+                            <a href="about.html" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Profil Perusahaan</a>
+                            <a href="about.html#history" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Sejarah</a>
+                            <a href="about.html#vision" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Visi & Misi</a>
+                            <a href="about.html#management" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Manajemen</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="business.html" class="flex items-center gap-1 text-gray-700 hover:text-[#1e3a5f] font-medium py-8 text-sm">Bisnis Kami <i class="fas fa-chevron-down text-xs"></i></a>
+                        <div class="nav-dropdown absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg py-3 border-t-2 border-[#1e3a5f]">
+                            <a href="business.html#digital" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Exmind Digital</a>
+                            <a href="business.html#creative" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">FDX Management</a>
+                            <a href="business.html#media" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Neulink News</a>
+                            <a href="business.html#consulting" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">D'Multi Pro</a>
+                            <a href="business.html#hrd" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Realm Man</a>
+                            <a href="business.html#distribution" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Oravita Group</a>
+                            <a href="business.html#event" class="block px-5 py-2.5 hover:bg-gray-50 hover:text-[#1e3a5f] transition text-sm">Kounan Group</a>
+                        </div>
+                    </div>
+                    <a href="sustainability.html" class="text-gray-700 hover:text-[#1e3a5f] font-medium text-sm py-8">Keberlanjutan</a>
+                    <a href="investor.html" class="text-gray-700 hover:text-[#1e3a5f] font-medium text-sm py-8">Investor</a>
+                    <a href="news.html" class="text-gray-700 hover:text-[#1e3a5f] font-medium text-sm py-8">Berita</a>
+                    <a href="career.html" class="text-gray-700 hover:text-[#1e3a5f] font-medium text-sm py-8">Karir</a>
+                </div>
+                <button class="lg:hidden text-gray-600" onclick="toggleMobileMenu()"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+            <div class="container mx-auto px-6 py-4 space-y-3">
+                <a href="about.html" class="block py-2 text-gray-700">Tentang Kami</a>
+                <a href="business.html" class="block py-2 text-gray-700">Bisnis Kami</a>
+                <a href="sustainability.html" class="block py-2 text-gray-700">Keberlanjutan</a>
+                <a href="investor.html" class="block py-2 text-gray-700">Investor</a>
+                <a href="news.html" class="block py-2 text-gray-700">Berita</a>
+                <a href="career.html" class="block py-2 text-gray-700">Karir</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-[#1e3a5f] text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl">
+                <div class="text-sm text-blue-300 mb-2 uppercase tracking-wider"><i class="fas fa-envelope mr-2"></i> Contact</div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hubungi Kami</h1>
+                <p class="text-xl text-blue-100">Kami siap membantu Anda. Silakan hubungi kami melalui form di bawah atau informasi kontak yang tersedia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div class="scroll-reveal">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Kirim Pesan</h2>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1e3a5f] focus:border-transparent outline-none transition" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1e3a5f] focus:border-transparent outline-none transition" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Subjek</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1e3a5f] focus:border-transparent outline-none transition">
+                                <option>Umum</option>
+                                <option>Investor Relations</option>
+                                <option>Karir</option>
+                                <option>Kerjasama Bisnis</option>
+                                <option>Media</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
+                            <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1e3a5f] focus:border-transparent outline-none transition" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-8 py-4 bg-[#1e3a5f] text-white font-semibold rounded-lg hover:bg-[#2c5282] transition">
+                            Kirim Pesan <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="scroll-reveal" style="transition-delay: 100ms;">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Informasi Kontak</h2>
+                    
+                    <div class="space-y-6 mb-12">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-[#1e3a5f] rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-1">Alamat Kantor</h3>
+                                <p class="text-gray-600">Menara Astria, Jl. Sudirman Kav. 10-11<br>Jakarta Selatan 10220, Indonesia</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-[#3182ce] rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                                <i class="fas fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-1">Telepon</h3>
+                                <p class="text-gray-600">+62 21 1234 5678 (Hunting)<br>+62 21 1234 5679 (Fax)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-1">Email</h3>
+                                <p class="text-gray-600">corporate@astria-group.com<br>investor@astria-group.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-1">Jam Operasional</h3>
+                                <p class="text-gray-600">Senin - Jumat: 08.00 - 17.00 WIB<br>Sabtu, Minggu & Hari Libur: Tutup</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="bg-gray-200 rounded-2xl h-64 flex items-center justify-center">
+                        <div class="text-center text-gray-500">
+                            <i class="fas fa-map text-4xl mb-2"></i>
+                            <p>Interactive Map</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unit Contacts -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Kontak Unit Bisnis</h2>
+                <p class="text-gray-600">Hubungi langsung unit bisnis spesifik untuk kebutuhan Anda.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition scroll-reveal">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                        <i class="fas fa-microchip text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Exmind Digital</h3>
+                    <p class="text-sm text-gray-600 mb-3">Teknologi & Digital Solutions</p>
+                    <a href="mailto:exmind@astria-group.com" class="text-sm text-[#1e3a5f] hover:underline">exmind@astria-group.com</a>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-4">
+                        <i class="fas fa-palette text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">FDX Management</h3>
+                    <p class="text-sm text-gray-600 mb-3">Kreatif & Digital Marketing</p>
+                    <a href="mailto:fdx@astria-group.com" class="text-sm text-[#1e3a5f] hover:underline">fdx@astria-group.com</a>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600 mb-4">
+                        <i class="fas fa-newspaper text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Neulink News</h3>
+                    <p class="text-sm text-gray-600 mb-3">Media & Konten</p>
+                    <a href="mailto:neulink@astria-group.com" class="text-sm text-[#1e3a5f] hover:underline">neulink@astria-group.com</a>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition scroll-reveal">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-4">
+                        <i class="fas fa-briefcase text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">D'Multi Pro</h3>
+                    <p class="text-sm text-gray-600 mb-3">Konsultan Manajemen</p>
+                    <a href="mailto:dmulti@astria-group.com" class="text-sm text-[#1e3a5f] hover:underline">dmulti@astria-group.com</a>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600 mb-4">
+                        <i class="fas fa-user-tie text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Realm Man</h3>
+                    <p class="text-sm text-gray-600 mb-3">Solusi SDM</p>
+                    <a href="mailto:realm@astria-group.com" class="text-sm text-[#1e3a5f] hover:underline">realm@astria-group.com</a>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 mb-4">
+                        <i class="fas fa-boxes text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Oravita Group</h3>
+                    <p class="text-sm text-gray-600 mb-3">Distribusi & Supply Chain</p>
+                    <a href="mailto:oravita@astria-group.com" class="text-sm text-[#1e3a5f] hover:underline">oravita@astria-group.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                            <span class="text-[#1e3a5f] font-bold text-xl">A</span>
+                        </div>
+                        <div>
+                            <span class="text-xl font-bold">ASTRIA</span>
+                            <span class="text-xs text-gray-400 block -mt-1">GROUP</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md text-sm leading-relaxed">
+                        PT Astria Sukses Internasional adalah holding company yang membangun ekosistem bisnis terintegrasi melalui tujuh unit bisnis yang adaptif dan inovatif.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#3182ce] transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#3182ce] transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#3182ce] transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="business.html" class="hover:text-white transition">Bisnis Kami</a></li>
+                        <li><a href="sustainability.html" class="hover:text-white transition">Keberlanjutan</a></li>
+                        <li><a href="investor.html" class="hover:text-white transition">Investor</a></li>
+                        <li><a href="news.html" class="hover:text-white transition">Berita</a></li>
+                        <li><a href="career.html" class="hover:text-white transition">Karir</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm uppercase tracking-wider">Kontak</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-[#3182ce]"></i>
+                            <span>Menara Astria, Jakarta Selatan<br>Indonesia</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-[#3182ce]"></i>
+                            <span>+62 21 1234 5678</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-[#3182ce]"></i>
+                            <span>corporate@astria-group.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+                <div>© 2026 PT Astria Sukses Internasional. All rights reserved.</div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-white transition">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
